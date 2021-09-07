@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trello Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div>
+    <form id="form-add-lane"action="">
+      <input type="text" name="lane-name" id="lane-name">
+      <input type="submit" value="Add lane">
+    </form>
+  </div>
+  <div class="lanes">
+    <!-- <div class="lane" data-lane-id="backlog">
+      <div class="header">
+        Backlog
+      </div>
+      <div class="tasks" data-drop-zone >
+        
+      </div>
+      <form data-task-form>
+        <input data-task-input class="task-input" type="text" placeholder="Task Name" />
+      </form>
+    </div>
+    <div class="lane" data-lane-id="doing">
+      <div class="header">
+        Doing
+      </div>
+      <div class="tasks" data-drop-zone >
+        
+      </div>
+      <form data-task-form>
+        <input data-task-input class="task-input" type="text" placeholder="Task Name" />
+      </form>
+    </div>
+    <div class="lane" data-lane-id="done">
+      <div class="header">
+        Done
+      </div>
+      <div class="tasks" data-drop-zone>
+      </div>
+      <form data-task-form>
+        <input data-task-input class="task-input" type="text" placeholder="Task Name" />
+      </form>
+    </div> -->
+  </div>
+
+  <template id="lane-template">
+    <div class="lane" data-lane-id>
+      <button data-delete-lane>X</button>
+      <div class="header">
+        Doing
+      </div>
+      <div class="tasks" data-drop-zone >
+        
+      </div>
+      <form data-task-form>
+        <input data-task-input class="task-input" type="text" placeholder="Task Name" />
+      </form>
+    </div>
+  </template>
+  <template id="task-template">
+    <div class="task">
+      <button data-delete-task>Delete</button>
+      <div data-task-name></div>
+      
+    </div>
+  </template>
+</body>
+</html>
